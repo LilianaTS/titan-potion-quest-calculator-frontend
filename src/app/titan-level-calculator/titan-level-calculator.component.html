@@ -1,0 +1,30 @@
+<div class="level-up">
+    <div class="number-of-levels">Number of Levels</div>
+    <input type="number" [(ngModel)]="levelsToUp" />
+</div>
+
+<div class="titan-grid">
+    <div class="header-row">
+        <div class="header">Titan Name</div>
+        <div class="header">Current Titan Level</div>
+        <div class="header">Number of Times to Level Up</div>
+        <div class="header">Cost</div>
+    </div>
+    <div class="titan-row" *ngFor="let titan of TitanList">
+        <div class="titan-info">
+            <img [src]="titan.image" alt="{{titan.name}}" />
+            <span>{{ titan.name }}</span>
+        </div>
+        <input type="number" [(ngModel)]="titan.currentLevel" />
+        <div class="calculated-field">{{ titan.timesToLevelUp }}</div>
+        <div class="calculated-field">{{ titan.cost }}</div>
+    </div>
+</div>
+<!-- 
+<div class="overview" *ngIf="showOverview">
+    <div class="overview-title">Overview</div>
+    <div class="overview-content" *ngFor="let item of overviewList">
+        <span>{{ item.name }}: {{ item.times }}</span>
+    </div>
+    <div class="total-cost">Total Cost: {{ totalCost }}</div>
+</div> -->

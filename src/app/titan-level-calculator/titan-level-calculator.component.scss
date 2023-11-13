@@ -1,0 +1,143 @@
+.level-up {
+    display: inline flex;
+    margin-bottom: 10px;
+
+    .number-of-levels {
+        font-weight: bold;
+        padding: 10px;
+        background-color: #e0e0e0;
+        max-width: 200px; // Adjust this value as needed to fit the label text
+        margin: auto; // This centers the label and input
+        margin-right: 5px;
+    }
+
+    input[type="number"] {
+        width: 75px;
+        padding: 5px;
+        text-align: center; // This will center the text inside the input
+        margin: 5px auto; // Center the input itself
+        border: 1px solid #ccc;
+        background-color: #f0f0f0 !important;
+        border-radius: 4px;
+    }
+}
+
+
+.titan-grid {
+    max-width: 600px;
+
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        background-color: #e0e0e0;
+        padding: 10px;
+
+        .header {
+            font-weight: bold;
+            flex: 1;
+            text-align: center;
+            padding: 0 10px;
+        }
+    }
+
+    .titan-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+
+        .titan-info {
+            display: flex;
+            max-width: 150px;
+            align-items: center;
+            flex: 2;
+
+            img {
+                height: 50px; // Adjust as needed
+                margin-right: 10px;
+            }
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        input[type="number"] {
+            width: 150px;
+            margin: 0px auto; // Added to center the input within its flex container
+        }
+
+        .calculated-field {
+            flex: 1;
+            width: 150px;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.overview {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+
+    .overview-title {
+        font-weight: bold;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .overview-content {
+        margin-bottom: 5px;
+
+        span {
+            display: block;
+            margin-bottom: 2px;
+        }
+    }
+
+    .total-cost {
+        font-weight: bold;
+        padding-top: 5px;
+        border-top: 1px solid #ccc;
+    }
+}
+
+// Additional Styling
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+// Utility Classes
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
