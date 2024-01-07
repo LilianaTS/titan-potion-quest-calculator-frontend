@@ -24,11 +24,12 @@
 
 
 .titan-grid {
-    max-width: 600px;
+    width: 640px;
 
     .header-row {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         background-color: #e0e0e0;
         padding: 10px;
 
@@ -49,7 +50,7 @@
 
         .titan-info {
             display: flex;
-            max-width: 150px;
+            max-width: 155px;
             align-items: center;
             flex: 2;
 
@@ -64,7 +65,8 @@
         }
 
         input[type="number"] {
-            width: 150px;
+            width: 141px;
+            padding: 5px;
             margin: 0px auto; // Added to center the input within its flex container
         }
 
@@ -74,6 +76,8 @@
             text-align: center;
             background-color: #f0f0f0;
             padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
             border-radius: 4px;
         }
     }

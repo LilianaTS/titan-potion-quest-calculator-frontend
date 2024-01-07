@@ -1,18 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TitanInformation } from '../interfaces/titan-information';
+import { TitanLevelUpInformation } from '../interfaces/titan-level-up-information';
 
 @Component({
   selector: 'app-titan-level-calculator',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, HttpClientModule],
   templateUrl: './titan-level-calculator.component.html',
   styleUrl: './titan-level-calculator.component.scss',
 })
-export class TitanLevelCalculatorComponent {
-  levelsToUp = 0;
+export class TitanLevelCalculatorComponent implements OnInit {
+  levelsToUp: number = 0;
+  totalCost: number = 0;
 
-  TitanList = [
+  TitanCost: TitanLevelUpInformation[];
+
+  constructor(private http: HttpClient) {
+    this.TitanCost = [];
+  }
+
+  TitanList: TitanInformation[] = [
     {
       name: 'Araji',
       image: '../assets/titan-images/Araji.jpg',
@@ -174,4 +184,37 @@ export class TitanLevelCalculatorComponent {
       selected: true,
     },
   ];
+
+  updateTitanLevels(levelsRequired: number) {
+    for (let i = 0; i < levelsRequired; i++) {
+      let lowestLevel = Math.min(
+        ...this.TitanList.map((titan: TitanInformation) => titan.currentLevel)
+      );
+
+      let titanToLevel: TitanInformation | undefined = this.TitanList.find(
+        (titan: TitanInformation) => titan.currentLevel === lowestLevel
+      );
+  }
+
+  onCurrentLevelChange(titan: TitanInformation) {
+    console.log(
+      `Current level of ${titan.name} changed to ${titan.currentLevel}`
+    );
+    // You can perform additional logic here if needed
+  }
+
+  ngOnInit(): void {
+    console.log('TitanCost', this.TitanCost);
+    this.http
+      .get<TitanLevelUpInformation[]>('./assets/titan-cost.json')
+      .subscribe(
+        (data) => {
+          this.TitanCost = data; // Assign the fetched data to TitanCost
+          console.log('TitanCost', this.TitanCost);
+        },
+        (error) => {
+          console.error('Error fetching titan-cost.json', error);
+        }
+      );
+  }
 }
