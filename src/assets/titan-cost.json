@@ -1,0 +1,602 @@
+[
+  {
+    "Level": 1,
+    "TitanPotionToNext": "100",
+    "Total": "0"
+  },
+  {
+    "Level": 2,
+    "TitanPotionToNext": "110",
+    "Total": "100"
+  },
+  {
+    "Level": 3,
+    "TitanPotionToNext": "120",
+    "Total": "210"
+  },
+  {
+    "Level": 4,
+    "TitanPotionToNext": "130",
+    "Total": "330"
+  },
+  {
+    "Level": 5,
+    "TitanPotionToNext": "140",
+    "Total": "460"
+  },
+  {
+    "Level": 6,
+    "TitanPotionToNext": "150",
+    "Total": "600"
+  },
+  {
+    "Level": 7,
+    "TitanPotionToNext": "160",
+    "Total": "750"
+  },
+  {
+    "Level": 8,
+    "TitanPotionToNext": "170",
+    "Total": "910"
+  },
+  {
+    "Level": 9,
+    "TitanPotionToNext": "180",
+    "Total": "1080"
+  },
+  {
+    "Level": 10,
+    "TitanPotionToNext": "190",
+    "Total": "1260"
+  },
+  {
+    "Level": 11,
+    "TitanPotionToNext": "200",
+    "Total": "1450"
+  },
+  {
+    "Level": 12,
+    "TitanPotionToNext": "210",
+    "Total": "1650"
+  },
+  {
+    "Level": 13,
+    "TitanPotionToNext": "220",
+    "Total": "1860"
+  },
+  {
+    "Level": 14,
+    "TitanPotionToNext": "230",
+    "Total": "2080"
+  },
+  {
+    "Level": 15,
+    "TitanPotionToNext": "240",
+    "Total": "2310"
+  },
+  {
+    "Level": 16,
+    "TitanPotionToNext": "250",
+    "Total": "2550"
+  },
+  {
+    "Level": 17,
+    "TitanPotionToNext": "260",
+    "Total": "2800"
+  },
+  {
+    "Level": 18,
+    "TitanPotionToNext": "270",
+    "Total": "3060"
+  },
+  {
+    "Level": 19,
+    "TitanPotionToNext": "280",
+    "Total": "3330"
+  },
+  {
+    "Level": 20,
+    "TitanPotionToNext": "290",
+    "Total": "3610"
+  },
+  {
+    "Level": 21,
+    "TitanPotionToNext": "300",
+    "Total": "3900"
+  },
+  {
+    "Level": 22,
+    "TitanPotionToNext": "310",
+    "Total": "4200"
+  },
+  {
+    "Level": 23,
+    "TitanPotionToNext": "320",
+    "Total": "4510"
+  },
+  {
+    "Level": 24,
+    "TitanPotionToNext": "330",
+    "Total": "4830"
+  },
+  {
+    "Level": 25,
+    "TitanPotionToNext": "340",
+    "Total": "5160"
+  },
+  {
+    "Level": 26,
+    "TitanPotionToNext": "350",
+    "Total": "5500"
+  },
+  {
+    "Level": 27,
+    "TitanPotionToNext": "360",
+    "Total": "5850"
+  },
+  {
+    "Level": 28,
+    "TitanPotionToNext": "370",
+    "Total": "6210"
+  },
+  {
+    "Level": 29,
+    "TitanPotionToNext": "380",
+    "Total": "6580"
+  },
+  {
+    "Level": 30,
+    "TitanPotionToNext": "390",
+    "Total": "6960"
+  },
+  {
+    "Level": 31,
+    "TitanPotionToNext": "440",
+    "Total": "7350"
+  },
+  {
+    "Level": 32,
+    "TitanPotionToNext": "490",
+    "Total": "7790"
+  },
+  {
+    "Level": 33,
+    "TitanPotionToNext": "540",
+    "Total": "8280"
+  },
+  {
+    "Level": 34,
+    "TitanPotionToNext": "590",
+    "Total": "8820"
+  },
+  {
+    "Level": 35,
+    "TitanPotionToNext": "640",
+    "Total": "9410"
+  },
+  {
+    "Level": 36,
+    "TitanPotionToNext": "690",
+    "Total": "10050"
+  },
+  {
+    "Level": 37,
+    "TitanPotionToNext": "740",
+    "Total": "10740"
+  },
+  {
+    "Level": 38,
+    "TitanPotionToNext": "790",
+    "Total": "11480"
+  },
+  {
+    "Level": 39,
+    "TitanPotionToNext": "840",
+    "Total": "12270"
+  },
+  {
+    "Level": 40,
+    "TitanPotionToNext": "890",
+    "Total": "13110"
+  },
+  {
+    "Level": 41,
+    "TitanPotionToNext": "940",
+    "Total": "14000"
+  },
+  {
+    "Level": 42,
+    "TitanPotionToNext": "990",
+    "Total": "14940"
+  },
+  {
+    "Level": 43,
+    "TitanPotionToNext": "1040",
+    "Total": "15930"
+  },
+  {
+    "Level": 44,
+    "TitanPotionToNext": "1090",
+    "Total": "16970"
+  },
+  {
+    "Level": 45,
+    "TitanPotionToNext": "1140",
+    "Total": "18060"
+  },
+  {
+    "Level": 46,
+    "TitanPotionToNext": "1190",
+    "Total": "19200"
+  },
+  {
+    "Level": 47,
+    "TitanPotionToNext": "1240",
+    "Total": "20390"
+  },
+  {
+    "Level": 48,
+    "TitanPotionToNext": "1290",
+    "Total": "21630"
+  },
+  {
+    "Level": 49,
+    "TitanPotionToNext": "1340",
+    "Total": "22920"
+  },
+  {
+    "Level": 50,
+    "TitanPotionToNext": "1390",
+    "Total": "24260"
+  },
+  {
+    "Level": 51,
+    "TitanPotionToNext": "1490",
+    "Total": "25650"
+  },
+  {
+    "Level": 52,
+    "TitanPotionToNext": "1590",
+    "Total": "27140"
+  },
+  {
+    "Level": 53,
+    "TitanPotionToNext": "1690",
+    "Total": "28730"
+  },
+  {
+    "Level": 54,
+    "TitanPotionToNext": "1790",
+    "Total": "30420"
+  },
+  {
+    "Level": 55,
+    "TitanPotionToNext": "1890",
+    "Total": "32210"
+  },
+  {
+    "Level": 56,
+    "TitanPotionToNext": "1990",
+    "Total": "34100"
+  },
+  {
+    "Level": 57,
+    "TitanPotionToNext": "2090",
+    "Total": "36090"
+  },
+  {
+    "Level": 58,
+    "TitanPotionToNext": "2190",
+    "Total": "38180"
+  },
+  {
+    "Level": 59,
+    "TitanPotionToNext": "2290",
+    "Total": "40370"
+  },
+  {
+    "Level": 60,
+    "TitanPotionToNext": "2390",
+    "Total": "42660"
+  },
+  {
+    "Level": 61,
+    "TitanPotionToNext": "2490",
+    "Total": "45050"
+  },
+  {
+    "Level": 62,
+    "TitanPotionToNext": "2590",
+    "Total": "47540"
+  },
+  {
+    "Level": 63,
+    "TitanPotionToNext": "2690",
+    "Total": "50130"
+  },
+  {
+    "Level": 64,
+    "TitanPotionToNext": "2790",
+    "Total": "52820"
+  },
+  {
+    "Level": 65,
+    "TitanPotionToNext": "2890",
+    "Total": "55610"
+  },
+  {
+    "Level": 66,
+    "TitanPotionToNext": "2990",
+    "Total": "58500"
+  },
+  {
+    "Level": 67,
+    "TitanPotionToNext": "3090",
+    "Total": "61490"
+  },
+  {
+    "Level": 68,
+    "TitanPotionToNext": "3190",
+    "Total": "64580"
+  },
+  {
+    "Level": 69,
+    "TitanPotionToNext": "3290",
+    "Total": "67770"
+  },
+  {
+    "Level": 70,
+    "TitanPotionToNext": "3390",
+    "Total": "71060"
+  },
+  {
+    "Level": 71,
+    "TitanPotionToNext": "3590",
+    "Total": "74450"
+  },
+  {
+    "Level": 72,
+    "TitanPotionToNext": "3790",
+    "Total": "78040"
+  },
+  {
+    "Level": 73,
+    "TitanPotionToNext": "3990",
+    "Total": "81830"
+  },
+  {
+    "Level": 74,
+    "TitanPotionToNext": "4190",
+    "Total": "85820"
+  },
+  {
+    "Level": 75,
+    "TitanPotionToNext": "4390",
+    "Total": "90010"
+  },
+  {
+    "Level": 76,
+    "TitanPotionToNext": "4590",
+    "Total": "94400"
+  },
+  {
+    "Level": 77,
+    "TitanPotionToNext": "4790",
+    "Total": "98990"
+  },
+  {
+    "Level": 78,
+    "TitanPotionToNext": "4990",
+    "Total": "103780"
+  },
+  {
+    "Level": 79,
+    "TitanPotionToNext": "5190",
+    "Total": "108770"
+  },
+  {
+    "Level": 80,
+    "TitanPotionToNext": "5390",
+    "Total": "113960"
+  },
+  {
+    "Level": 81,
+    "TitanPotionToNext": "5590",
+    "Total": "119350"
+  },
+  {
+    "Level": 82,
+    "TitanPotionToNext": "5990",
+    "Total": "124940"
+  },
+  {
+    "Level": 83,
+    "TitanPotionToNext": "6390",
+    "Total": "130930"
+  },
+  {
+    "Level": 84,
+    "TitanPotionToNext": "6790",
+    "Total": "137320"
+  },
+  {
+    "Level": 85,
+    "TitanPotionToNext": "7190",
+    "Total": "144110"
+  },
+  {
+    "Level": 86,
+    "TitanPotionToNext": "7590",
+    "Total": "151300"
+  },
+  {
+    "Level": 87,
+    "TitanPotionToNext": "7990",
+    "Total": "158890"
+  },
+  {
+    "Level": 88,
+    "TitanPotionToNext": "8390",
+    "Total": "166880"
+  },
+  {
+    "Level": 89,
+    "TitanPotionToNext": "8790",
+    "Total": "175270"
+  },
+  {
+    "Level": 90,
+    "TitanPotionToNext": "9190",
+    "Total": "184060"
+  },
+  {
+    "Level": 91,
+    "TitanPotionToNext": "9590",
+    "Total": "193250"
+  },
+  {
+    "Level": 92,
+    "TitanPotionToNext": "9990",
+    "Total": "202840"
+  },
+  {
+    "Level": 93,
+    "TitanPotionToNext": "10390",
+    "Total": "212830"
+  },
+  {
+    "Level": 94,
+    "TitanPotionToNext": "10790",
+    "Total": "223220"
+  },
+  {
+    "Level": 95,
+    "TitanPotionToNext": "11190",
+    "Total": "234010"
+  },
+  {
+    "Level": 96,
+    "TitanPotionToNext": "11590",
+    "Total": "245200"
+  },
+  {
+    "Level": 97,
+    "TitanPotionToNext": "11990",
+    "Total": "256790"
+  },
+  {
+    "Level": 98,
+    "TitanPotionToNext": "12390",
+    "Total": "268780"
+  },
+  {
+    "Level": 99,
+    "TitanPotionToNext": "12790",
+    "Total": "281170"
+  },
+  {
+    "Level": 100,
+    "TitanPotionToNext": "13390",
+    "Total": "293960"
+  },
+  {
+    "Level": 101,
+    "TitanPotionToNext": "13990",
+    "Total": "307350"
+  },
+  {
+    "Level": 102,
+    "TitanPotionToNext": "14590",
+    "Total": "321340"
+  },
+  {
+    "Level": 103,
+    "TitanPotionToNext": "15190",
+    "Total": "335930"
+  },
+  {
+    "Level": 104,
+    "TitanPotionToNext": "15790",
+    "Total": "351120"
+  },
+  {
+    "Level": 105,
+    "TitanPotionToNext": "16390",
+    "Total": "366910"
+  },
+  {
+    "Level": 106,
+    "TitanPotionToNext": "16990",
+    "Total": "383300"
+  },
+  {
+    "Level": 107,
+    "TitanPotionToNext": "17590",
+    "Total": "400290"
+  },
+  {
+    "Level": 108,
+    "TitanPotionToNext": "18190",
+    "Total": "417880"
+  },
+  {
+    "Level": 109,
+    "TitanPotionToNext": "18790",
+    "Total": "436070"
+  },
+  {
+    "Level": 110,
+    "TitanPotionToNext": "19590",
+    "Total": "454860"
+  },
+  {
+    "Level": 111,
+    "TitanPotionToNext": "20390",
+    "Total": "474450"
+  },
+  {
+    "Level": 112,
+    "TitanPotionToNext": "21190",
+    "Total": "494840"
+  },
+  {
+    "Level": 113,
+    "TitanPotionToNext": "21990",
+    "Total": "516030"
+  },
+  {
+    "Level": 114,
+    "TitanPotionToNext": "22790",
+    "Total": "538020"
+  },
+  {
+    "Level": 115,
+    "TitanPotionToNext": "23590",
+    "Total": "560810"
+  },
+  {
+    "Level": 116,
+    "TitanPotionToNext": "24390",
+    "Total": "584400"
+  },
+  {
+    "Level": 117,
+    "TitanPotionToNext": "25190",
+    "Total": "608790"
+  },
+  {
+    "Level": 118,
+    "TitanPotionToNext": "25990",
+    "Total": "633980"
+  },
+  {
+    "Level": 119,
+    "TitanPotionToNext": "26790",
+    "Total": "659970"
+  },
+  {
+    "Level": 120,
+    "TitanPotionToNext": "-",
+    "Total": "686760"
+  }
+]
