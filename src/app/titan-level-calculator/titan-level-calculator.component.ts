@@ -185,24 +185,6 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
   ];
 
-  updateTitanLevels(levelsRequired: number) {
-    for (let i = 0; i < levelsRequired; i++) {
-      let lowestLevel = Math.min(
-        ...this.TitanList.map((titan: TitanInformation) => titan.currentLevel)
-      );
-
-      let titanToLevel: TitanInformation | undefined = this.TitanList.find(
-        (titan: TitanInformation) => titan.currentLevel === lowestLevel
-      );
-  }
-
-  onCurrentLevelChange(titan: TitanInformation) {
-    console.log(
-      `Current level of ${titan.name} changed to ${titan.currentLevel}`
-    );
-    // You can perform additional logic here if needed
-  }
-
   exportTitanList() {
     const exportedData = this.TitanList.map(
       ({ name, currentLevel, selected }) => ({ name, currentLevel, selected })
@@ -240,6 +222,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
             titan.selected = importedTitan.selected;
           }
         });
+        this.calculateTitanCost(this.levelsToUp);
       };
 
       reader.readAsText(file);
@@ -249,17 +232,55 @@ export class TitanLevelCalculatorComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log('TitanCost', this.TitanCost);
     this.http
       .get<TitanLevelUpInformation[]>('./assets/titan-cost.json')
       .subscribe(
         (data) => {
           this.TitanCost = data; // Assign the fetched data to TitanCost
-          console.log('TitanCost', this.TitanCost);
         },
         (error) => {
           console.error('Error fetching titan-cost.json', error);
         }
       );
+  }
+
+  calculateTitanCost(levelsRequired: number) {
+    this.totalCost = 0;
+    this.TitanList.forEach((titan) => {
+      titan.timesToLevelUp = 0;
+      titan.cost = 0;
+    });
+
+    const selectedTitans = this.TitanList.filter((titan) => titan.selected);
+
+    for (let i = 0; i < levelsRequired; i++) {
+      const lowestLevel = Math.min(
+        ...selectedTitans.map(
+          (titan: TitanInformation) => titan.currentLevel + titan.timesToLevelUp
+        )
+      );
+
+      const titanToLevel: TitanInformation | undefined = selectedTitans.find(
+        (titan: TitanInformation) =>
+          titan.currentLevel + titan.timesToLevelUp == lowestLevel
+      );
+
+      if (titanToLevel) {
+        const titanCostForLevel: TitanLevelUpInformation | undefined =
+          this.TitanCost.find(
+            (cost: TitanLevelUpInformation) =>
+              cost.level ==
+              titanToLevel.currentLevel + titanToLevel.timesToLevelUp
+          );
+        if (titanCostForLevel) {
+          this.totalCost += parseInt(titanCostForLevel.titanPotionToNext, 10);
+          titanToLevel.cost += parseInt(
+            titanCostForLevel.titanPotionToNext,
+            10
+          );
+        }
+        titanToLevel.timesToLevelUp += 1;
+      }
+    }
   }
 }

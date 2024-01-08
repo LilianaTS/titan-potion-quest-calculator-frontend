@@ -1,10 +1,12 @@
 <div class="level-up">
   <div class="number-of-levels">Number of Levels</div>
-  <input type="number" [(ngModel)]="levelsToUp" />
-  <!-- <button (click)="updateTitanLevels(levelsToUp)"> -->
-  <!-- Update Titan Levels -->
-  <!-- </button> -->
-  <div>Total Cost: {{ totalCost }}</div>
+  <input
+    type="number"
+    [min]="0"
+    [(ngModel)]="levelsToUp"
+    (ngModelChange)="calculateTitanCost(levelsToUp)"
+  />
+  <div class="boxed">Total Cost: {{ totalCost }}</div>
 </div>
 
 <div>
@@ -29,12 +31,7 @@
       />
       <span>{{ titan.name }}</span>
     </div>
-    <input
-      type="number"
-      [max]="120"
-      [(ngModel)]="titan.currentLevel"
-      (ngModelChange)="onCurrentLevelChange(titan)"
-    />
+    <input type="number" [max]="120" [(ngModel)]="titan.currentLevel" />
     <div class="calculated-field">{{ titan.timesToLevelUp }}</div>
     <div class="calculated-field">{{ titan.cost }}</div>
   </div>
