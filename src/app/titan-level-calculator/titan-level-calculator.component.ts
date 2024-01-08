@@ -137,7 +137,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Amon',
-      image: '../assets/titan-images/Amon.jpg',
+      image: '../assets/titan-images/Amon.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -177,7 +177,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Iyari',
-      image: '../assets/titan-images/Iyari.jpg',
+      image: '../assets/titan-images/Iyari.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -201,6 +201,51 @@ export class TitanLevelCalculatorComponent implements OnInit {
       `Current level of ${titan.name} changed to ${titan.currentLevel}`
     );
     // You can perform additional logic here if needed
+  }
+
+  exportTitanList() {
+    const exportedData = this.TitanList.map(
+      ({ name, currentLevel, selected }) => ({ name, currentLevel, selected })
+    );
+
+    const jsonBlob = new Blob([JSON.stringify(exportedData)], {
+      type: 'application/json',
+    });
+    const url = window.URL.createObjectURL(jsonBlob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'titan_list.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }
+
+  importTitanList() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = (event: any) => {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+
+      reader.onload = () => {
+        const importedData = JSON.parse(reader.result as string);
+        this.TitanList.forEach((titan) => {
+          const importedTitan = importedData.find(
+            (importedTitan: any) => importedTitan.name === titan.name
+          );
+          if (importedTitan) {
+            titan.currentLevel = importedTitan.currentLevel;
+            titan.selected = importedTitan.selected;
+          }
+        });
+      };
+
+      reader.readAsText(file);
+    };
+
+    input.click();
   }
 
   ngOnInit(): void {

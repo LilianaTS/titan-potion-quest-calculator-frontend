@@ -7,6 +7,11 @@
   <div>Total Cost: {{ totalCost }}</div>
 </div>
 
+<div>
+  <button (click)="exportTitanList()">Export Data</button>
+  <button (click)="importTitanList()">Import Data</button>
+</div>
+
 <div class="titan-grid">
   <div class="header-row">
     <div class="header">Titan Name</div>
@@ -20,6 +25,7 @@
         [src]="titan.image"
         [alt]="titan.name"
         (click)="titan.selected = !titan.selected"
+        [style.filter]="titan.selected ? 'none' : 'grayscale(100%)'"
       />
       <span>{{ titan.name }}</span>
     </div>
