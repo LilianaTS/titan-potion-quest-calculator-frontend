@@ -1,7 +1,7 @@
 import { Component, OnChanges, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { TitanInformation } from '../interfaces/titan-information';
 import { TitanLevelUpInformation } from '../interfaces/titan-level-up-information';
 
@@ -619,14 +619,10 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
   ];
 
-  constructor(private http: HttpClient) {
-    this.TitanCost = [];
-  }
-
   TitanList: TitanInformation[] = [
     {
       name: 'Araji',
-      image: '../assets/titan-images/Araji.jpg',
+      image: '/assets/titan-images/Araji.jpg',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -634,7 +630,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Hyperion',
-      image: '../assets/titan-images/Hyperion.png',
+      image: '/assets/titan-images/Hyperion.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -642,7 +638,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Eden',
-      image: '../assets/titan-images/Eden.png',
+      image: '/assets/titan-images/Eden.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -650,7 +646,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Solaris',
-      image: '../assets/titan-images/Solaris.png',
+      image: '/assets/titan-images/Solaris.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -658,7 +654,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Tenebris',
-      image: '../assets/titan-images/Tenebris.png',
+      image: '/assets/titan-images/Tenebris.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -666,7 +662,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Moloch',
-      image: '../assets/titan-images/Moloch.png',
+      image: '/assets/titan-images/Moloch.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -674,7 +670,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Sigurd',
-      image: '../assets/titan-images/Sigurd.jpg',
+      image: '/assets/titan-images/Sigurd.jpg',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -682,7 +678,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Angus',
-      image: '../assets/titan-images/Angus.jpg',
+      image: '/assets/titan-images/Angus.jpg',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -690,7 +686,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Brustar',
-      image: '../assets/titan-images/Brustar.png',
+      image: '/assets/titan-images/Brustar.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -698,7 +694,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Rigel',
-      image: '../assets/titan-images/Rigel.png',
+      image: '/assets/titan-images/Rigel.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -706,7 +702,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Vulcan',
-      image: '../assets/titan-images/Vulcan.png',
+      image: '/assets/titan-images/Vulcan.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -714,7 +710,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Nova',
-      image: '../assets/titan-images/Nova.jpg',
+      image: '/assets/titan-images/Nova.jpg',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -722,7 +718,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Silva',
-      image: '../assets/titan-images/Silva.png',
+      image: '/assets/titan-images/Silva.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -730,7 +726,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Keros',
-      image: '../assets/titan-images/Keros.png',
+      image: '/assets/titan-images/Keros.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -738,7 +734,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Amon',
-      image: '../assets/titan-images/Amon.png',
+      image: '/assets/titan-images/Amon.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -746,7 +742,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Ignis',
-      image: '../assets/titan-images/Ignis.png',
+      image: '/assets/titan-images/Ignis.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -754,7 +750,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Mairi',
-      image: '../assets/titan-images/Mairi.jpg',
+      image: '/assets/titan-images/Mairi.jpg',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -762,7 +758,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Avalon',
-      image: '../assets/titan-images/Avalon.png',
+      image: '/assets/titan-images/Avalon.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -770,7 +766,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Mort',
-      image: '../assets/titan-images/Mort.png',
+      image: '/assets/titan-images/Mort.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,
@@ -778,7 +774,7 @@ export class TitanLevelCalculatorComponent implements OnInit {
     },
     {
       name: 'Iyari',
-      image: '../assets/titan-images/Iyari.png',
+      image: '/assets/titan-images/Iyari.png',
       currentLevel: 1,
       timesToLevelUp: 0,
       cost: 0,

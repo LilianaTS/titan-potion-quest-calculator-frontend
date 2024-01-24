@@ -25,7 +25,7 @@
     <div class="titan-info">
       <img
         [src]="titan.image"
-        [alt]="titan.name"
+        [alt]="titan.name + '\nselected: ' + titan.selected"
         (click)="titan.selected = !titan.selected"
         [style.filter]="titan.selected ? 'none' : 'grayscale(100%)'"
       />
